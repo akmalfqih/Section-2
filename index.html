@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Grayscale - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-double-up.css' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="AST/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css" />
+
+
+
+
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-info py-3 fixed-top navbar-transparent nambah navscroll" id="mainNav">
+        <div class="cobtainer px-4 px-lg-5">
+            <a class="navbar-brand ml-auto text-black font-weight-bold" href="#page-top">
+                <img src="assets/img/My project.png" alt="" class="navbar-logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navscroll" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-10 togel">
+                    <li class="nav-item"><a class="nav-link" href="#abot">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servies">Work Program</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfoio">Member</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Variables to keep track of scroll direction and last scroll position
+        let prevScrollPos = window.pageYOffset;
+        let scrollingUp = true;
+
+        // Function to handle navbar visibility on scroll
+        const handleNavbarVisibility = function () {
+            const navbar = document.querySelector('#mainNav');
+
+            // Get current scroll position
+            const currentScrollPos = window.pageYOffset;
+
+            // Determine scroll direction
+            scrollingUp = currentScrollPos < prevScrollPos;
+
+            // Update previous scroll position
+            prevScrollPos = currentScrollPos;
+
+            // Show/hide navbar based on scroll direction
+            if (scrollingUp) {
+                navbar.style.transform = 'translateY(0)';
+            } else {
+                navbar.style.transform = `translateY(-${navbar.offsetHeight}px)`;
+            }
+        };
+
+        // Show navbar on page load
+        handleNavbarVisibility();
+
+        // Event listener for scroll
+        window.addEventListener('scroll', handleNavbarVisibility);
+
+        // Collapse responsive navbar when toggler is clicked
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarResponsive = document.querySelector('#navbarResponsive');
+        const responsiveNavItems = [].slice.call(document.querySelectorAll('#navbarResponsive .nav-link'));
+
+        navbarToggler.addEventListener('click', function () {
+            if (navbarResponsive.classList.contains('show')) {
+                navbarResponsive.classList.remove('show');
+            } else {
+                navbarResponsive.classList.add('show');
+            }
+        });
+
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none' && navbarResponsive.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            });
+        });
+
+        // Activate SimpleLightbox plugin for portfolio items
+        new SimpleLightbox({
+            elements: '#portfolio a.portfolio-box'
+        });
+    </script>
+
+
+
+
+    <!-- AKHIR NAVBAR -->
+
+
+
+    <!-- SAMBUTAN KETUA -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="lampu">
+                        <img src="assets/img/ketom.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="lampu-text">
+                        <h1>Empowering Indonesia's Capital Market Literacy</h1>
+                        <p>
+                            <br>
+                            Greetings and a warm welcome to KSPM FEB Unila, the Student Capital Market Association at
+                            FEB Unila. It is my utmost privilege to serve as the Chairman, and I, Aurora Ariananda
+                            Jalita, am excited to embark on this journey with all of you.
+                            <br><br>
+                            At KSPM FEB Unila, our mission is to empower and elevate the literacy of Indonesia's capital
+                            market among the masses. We are dedicated to fostering a vibrant community and igniting a
+                            profound interest in the captivating world of investments. Together, we strive to make a
+                            meaningful impact on the financial industry and pave the way for a brighter economic future.
+                            <br><br>
+                            Join us on this extraordinary voyage, where knowledge knows no bounds, networks flourish,
+                            and the mysteries of the capital markets unfold. Together, we have the power to illuminate
+                            the path to a prosperous and financially informed society.
+                            <br>
+                            With my warmest regards,
+                            <br><br>
+                            Aurora Ariananda Jalita
+                            <br>
+                            Chairman of KSPM FEB Unila
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- AKHIR SAMBUTAN KETUA -->
+
+
+    <!-- ORGANIGRAM -->
+    <h1 class="portorg" id="projects">Organigram Structure</h1>
+    <section class="organigram">
+        <img src="assets/img/organigram.png" alt="" class="imgfluid">
+    </section>
+
+
+    <!-- AKHIR ORGANIGRAM -->
+
+
+    <!--    bod -->
+    <h1 class="portoofolio" id="projects">Organization Members</h1>
+    <section class="projects-section bg-light BOD">
+
+        <div class="cobtainer px-4 px-lg-5">
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7">
+                    <div class="apaansi">
+                        <div class="content-slide">
+                            <div class="imgslide fade">
+                                <div class="numberslide">1/4</div>
+                                <video class="organisasi" id="myVideo1" src="assets/img/bendum.mp4" type="video/mp4"
+                                    width="100%" loop muted></video>
+                                <div class="tekss">Ketua Umum KSPM FEB Unila Periode 2022/2023</div>
+                            </div>
+
+                            <script>
+                                const video1 = document.getElementById('myVideo1');
+
+                                // Jalankan video secara otomatis
+                                video1.play();
+
+                                // Berikan gaya CSS untuk menyembunyikan kontrol video
+                                video1.controls = false;
+                            </script>
+
+                            <div class="imgslide fade">
+                                <div class="numberslide">1/4</div>
+                                <video class="organisasi" id="myVideo2" src="assets/img/bendum.mp4" type="video/mp4"
+                                    width="100%" loop muted></video>
+                                <div class="tekss">Bendahara Umum KSPM FEB Unila Periode 2022/2023</div>
+                            </div>
+
+                            <script>
+                                const video2 = document.getElementById('myVideo2');
+
+                                // Jalankan video secara otomatis
+                                video2.play();
+
+                                // Berikan gaya CSS untuk menyembunyikan kontrol video
+                                video2.controls = false;
+                            </script>
+
+
+                            <div class="imgslide fade">
+                                <div class="numberslide">1/4</div>
+                                <video class="organisasi" id="myVideo3" src="assets/img/sekum.mp4" type="video/mp4"
+                                    width="100%" loop muted></video>
+                                <div class="tekss">Sekertaris Umum KSPM FEB Unila</div>
+                            </div>
+
+                            <script>
+                                const video3 = document.getElementById('myVideo3');
+
+                                // Jalankan video secara otomatis
+                                video3.play();
+
+                                // Berikan gaya CSS untuk menyembunyikan kontrol video
+                                video3.controls = false;
+                            </script>
+
+
+
+                            <a class="mundur" onclick="nextslide(-1)">&#10094;</a>
+                            <a class="lanjut" onclick="nextslide(1)">&#10095;</a>
+                        </div>
+
+                        <script>
+                            var slideindex = 1
+                            showsSlide(slideindex);
+
+                            function nextslide(n) {
+                                showsSlide(slideindex += n)
+                            }
+
+                            function showsSlide(n) {
+                                var i;
+                                var slides = document.getElementsByClassName
+                                    ("imgslide");
+
+                                if (n > slides.length) {
+                                    slideindex = 1
+                                }
+
+                                if (n < 1) {
+                                    slideindex = slides.length;
+                                }
+
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+
+                                slides[slideindex - 1].style.display = "block";
+                            }
+                        </script>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-5">
+                    <div class="text-center director">
+                        <h1>KSPM Director</h1>
+                        <h4 class="text-center">
+                            <span class="animated-text">Raffi diaz</span><br>
+                            <hr>
+                            <span class="animated-text">Restu zahire</span><br>
+                            <hr>
+                            <span class="animated-text">Emma afiffah</span><br>
+                            <hr>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <h2 class="portooofolio" id="portoofolio">To reach our goals, we have three sector and four beraues!<br><span class="memberz"></span></h2>
+    <section id="portfolio" class="portfolio">
+
+
+        <!-- portofliiooo -->
+
+        <div class="container" data-aos="fade-up">
+
+            <header class="section-header text-center z">
+                <h1>THREE SECTOR</h1>
+                <p>Introduce our Sector</p>
+            </header>
+
+
+
+            <div class="row gy-3 portfolio-cobtainer" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/bidang1.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>p 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfokio-lightbox" title="App 1">
+                                    <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                            class="kedua">click for more</span> </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/bidang2.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>p 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfokio-lightbox" title="App 1">
+                                    <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                            class="kedua">click for more</span> </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/bidang3.png" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>p 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                    class="portfokio-lightbox" title="App 1">
+                                    <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                            class="kedua">click for more</span> </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="text-center z y">
+                    <h1>FOUR BERAUE</h1>
+                    <p>Introduce our Beraue</p>
+                </section>
+                <div class="row text-center bla">
+
+                    <div class="col-lg-4 col-md-6  portfolio-item filter-app">
+                        <div class="portfolio-wrap j">
+                            <img src="assets/img/biro pr.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>p 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1">
+                                        <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                                class="kedua">click for more</span> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap j">
+                            <img src="assets/img/biro ig.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>p 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1">
+                                        <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                                class="kedua">click for more</span> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center bla">
+
+                    <div class="col-lg-4 col-md-6  portfolio-item filter-app">
+                        <div class="portfolio-wrap g">
+                            <img src="assets/img/biro ibe.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>p 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1">
+                                        <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                                class="kedua">click for more</span> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <div class="portfolio-wrap g">
+                            <img src="assets/img/biro ibe.png" class="img-fluid" alt="">
+                            <div class="portfolio-info">
+                                <h4>p 1</h4>
+                                <p>App</p>
+                                <div class="portfolio-links">
+                                    <a href="ASET/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                        class="portfokio-lightbox" title="App 1">
+                                        <p class="klik">SECTOR ONE <br> (Education and Form of Cadres) <br> <br> <span
+                                                class="kedua">click for more</span> </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <div class="portfolio-overlay">
+            <img src="ASET/img/portfolio/portfolio-1.jpg" alt="">
+        </div>
+
+
+        <script>
+            // Tambahkan script berikut untuk menampilkan overlay dan gambar yang diperbesar saat portfolio di klik
+            const portfolioItems = document.querySelectorAll('.portfolio-item-overlay');
+            const overlay = document.querySelector('.portfolio-overlay');
+            const overlayImage = overlay.querySelector('img');
+
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.dataset.image;
+                    overlayImage.src = imageSrc;
+                    overlay.style.display = 'flex';
+                });
+            });
+
+            overlay.addEventListener('click', () => {
+                overlay.style.display = 'none';
+            });
+        </script>
+
+
+    </section><!-- End Portfolio Section -->
+
+
+
+    <section class="staff">
+        <h1>Introduce our Staff!</h1>
+        <div class="text-center struktur">
+            <h2>Sector 1</h2>
+        </div>
+        <div class="cortainer cih">
+
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+        </div>
+
+        <div class="text-center struktur">
+            <h2>Sector 2</h2>
+        </div>
+        <div class="cortainer">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+
+        </div>
+        <div class="text-center struktur">
+            <h2>Sector 3</h2>
+        </div>
+        <div class="cortainer ">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+        </div>
+        <div class="cortainer brow">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+        </div>
+
+
+        <div class="text-center struktur">
+            <h2>Berau of Public Relation</h2>
+        </div>
+        <div class="cortainer">
+            <div class="card doang">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+        </div>
+
+        <div class="cortainer brow">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+        </div>
+        <div class="text-center struktur">
+            <h2>Berau of Investment Gallery</h2>
+        </div>
+        <div class="cortainer">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+
+        </div>
+
+        <div class="text-center struktur">
+            <h2>Beraue of Independent Business Entities</h2>
+        </div>
+        <div class="cortainer">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+        </div>
+        <div class="text-center struktur">
+            <h2>Beraue of Secretary</h2>
+        </div>
+        <div class="cortainer">
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+            <div class="card">
+                <h2 class="title">Nama</h2>
+                <div class="bar">
+                    <div class="emptybar"></div>
+                    <div class="filledbar"></div>
+                </div>
+                <div class="circle">
+                    <img src="assets/img/template.png" alt="">
+                </div>
+                <h3 class="title">Staff</h3>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+            
+        <div class="footer-content">
+            <h3>Kelompok Studi Pasar Modal <br> Fakultas Ekonomi dan Bisnis <br> Universitas Lampung</h3>
+            <h6>Jl. Prof. Dr. Soemantri Brodjonegoro No. 1 Gedongmeneng Rajabasa Bandar Lampung, 35145. Indonesia</h6>
+            <p>If you still curious about anything related to KSPM FEB Unila from A to Z, click the icon below and reach us out!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-map-marker-alt"></i></a></li>
+                
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                
+            </ul>
+
+        </div>
+        <div class="footer-bottom">
+            <p class="text-center">copyright &copy; <a href="#">@FaqihTech_Labs</a>  </p>
+        </div>
+    
+    </footer>
+
+
+    
+    
+    
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
+
+
+</body>
+
+</html>
